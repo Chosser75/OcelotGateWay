@@ -1,7 +1,7 @@
 {
   "Routes": [
     {
-      "DownstreamPathTemplate": "/api/promocodes/{id}",
+      "DownstreamPathTemplate": "/api/promocodes/{id}/{requestId}",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
@@ -9,7 +9,7 @@
           "Port": 44358
         }
       ],
-      "UpstreamPathTemplate": "/gateway/promocodes/{id}",
+      "UpstreamPathTemplate": "/gateway/promocodes/{id}/{requestId}",
       "UpstreamHttpMethod": [ "PUT" ]
     }
   ],
